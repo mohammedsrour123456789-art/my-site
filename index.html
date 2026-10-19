@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقتي الشخصية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(56, 189, 248, 0.3);
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #38bdf8, #818cf8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #f8fafc;
+        }
+
+        p.title {
+            color: #38bdf8;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        p.bio {
+            color: #94a3b8;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            transition: opacity 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-page {
+            background: linear-gradient(45deg, #5b43b5, #63cbf1);
+        }
+
+        .btn-telegram {
+            background: linear-gradient(45deg, #0088cc, #24a1de);
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="avatar">👨‍💻</div>
+        <h1>مُطور مستقبلي</h1>
+        <p class="title">مطور جافا وبايثون وويب</p>
+        <p class="bio">أعمل على تطوير مهاراتي في مجال البرمجة وتصميم أحدث تطبيقات الويب باستخدام VS Code.</p>
+        
+        <div class="buttons-container">
+            <!-- زر ينقلك إلى صفحة التواصل الثانية -->
+            <a href="contact.html" class="btn btn-page">إرسال رسالة ✉️</a>
+
+            <!-- زر ينقلك إلى التلجرام مباشرة -->
+            <a href="https://t.me/mohammed78648" target="_blank" class="btn btn-telegram">تواصل عبر التلجرام ✈️</a>
+        </div>
+    </div>
+
+</body>
+</html>
